@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+
+ <input type="text" id = "x" name="fname"><br>
+ 
+  <input type="text" id = "y" name="lname"><br><br>
+  <input type="button"  onclick="sendData()" value="nhan">
+
+
+ <script>
+ function sendData() {
+ 
+    var sendvalue1 = document.getElementsByName("fname")[0].value;
+    
+
+   var sendvalue2 = document.getElementsByName("lname")[0].value;
+
+   google.script.run.my_button_click_handler(sendvalue1,sendvalue2);
+    }
+
+
+
+</script>
+
+ 
+
+
+</body>
+</html>
